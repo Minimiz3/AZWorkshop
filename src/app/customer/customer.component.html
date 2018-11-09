@@ -1,0 +1,39 @@
+<h1>Create case</h1>
+<div class ="container">
+  <div class="row row-centered">
+    <div class="col-md-2">
+      <label >Customer Name:</label>
+    </div>
+    <div class="col-md-10">
+      <input [(ngModel)]="customer.name" placeholder="Customer Name" class="col-md-6"/>
+    </div>
+    <div class="col-md-2">
+      <label >Vehicle Information:</label>
+    </div>
+    <div class="col-md-10">
+      <input [(ngModel)]="customer.brand" placeholder="brand" class="col-md-6"/>
+    </div>
+    <div class="col-md-2">
+      <label >Where to pick up:</label>
+    </div>
+    <div class="col-md-10">
+      <input [(ngModel)]="customer.origin" placeholder="origin" class="col-md-6"/>
+    </div>
+    <div class="col-md-2">
+      <label >Destination:</label>
+    </div>
+    <div class="col-md-10">
+      <input [(ngModel)]="customer.destination" placeholder="destination" class="col-md-6"/>
+    </div>
+    <div class="col-md-2">
+      <label >Comments:</label>
+    </div>
+    <div class="col-md-10">
+      <input [(ngModel)]="customer.comment" placeholder="comment" class="col-md-6"/>
+    </div>
+    <div>
+      <button (click)="saveCase()" class= "btn btn-primary">Submit </button>
+    </div>
+    <label>{{saveStatus}}</label>
+  </div>
+</div>
