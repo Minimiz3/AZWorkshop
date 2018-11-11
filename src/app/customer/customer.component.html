@@ -1,37 +1,37 @@
 <h1>Create case</h1>
 <div class ="container">
-  <div class="row row-centered">
-    <div class="col-md-2">
+  <div class="row">
+    <div class="col-md-5" align="right">
       <label >Customer Name:</label>
     </div>
-    <div class="col-md-10">
-      <input [(ngModel)]="customer.name" placeholder="Customer Name" class="col-md-6"/>
+    <div class="col-md-5" align="left">
+      <input [(ngModel)]="case.customerName" placeholder="Customer Name" class="col-md-6"/>
     </div>
-    <div class="col-md-2">
+    <div class="col-md-5" align="right">
       <label >Vehicle Information:</label>
     </div>
-    <div class="col-md-10">
-      <input [(ngModel)]="customer.brand" placeholder="brand" class="col-md-6"/>
+    <div class="col-md-5" align="left">
+      <input [(ngModel)]="case.brand" placeholder="brand" class="col-md-6"/>
     </div>
-    <div class="col-md-2">
+    <div class="col-md-5" align="right">
       <label >Where to pick up:</label>
     </div>
-    <div class="col-md-10">
-      <input [(ngModel)]="customer.origin" placeholder="origin" class="col-md-6"/>
+    <div class="col-md-5" align="left">
+      <input [(ngModel)]="case.origin" placeholder="origin" class="col-md-6"/>
     </div>
-    <div class="col-md-2">
+    <div class="col-md-5" align="right">
       <label >Destination:</label>
     </div>
-    <div class="col-md-10">
-      <input [(ngModel)]="customer.destination" placeholder="destination" class="col-md-6"/>
+    <div class="col-md-5" align="left">
+      <input [(ngModel)]="case.destination" placeholder="destination" class="col-md-6"/>
     </div>
-    <div class="col-md-2">
+    <div class="col-md-5" align="right">
       <label >Comments:</label>
     </div>
-    <div class="col-md-10">
-      <input [(ngModel)]="customer.comment" placeholder="comment" class="col-md-6"/>
+    <div class="col-md-5" align="left">
+      <input [(ngModel)]="case.comment" placeholder="comment" class="col-md-6"/>
     </div>
-    <div>
+    <div class="col-md-10" alight="right">
       <button (click)="saveCase()" class= "btn btn-primary">Submit </button>
     </div>
     <label>{{saveStatus}}</label>

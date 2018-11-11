@@ -1,10 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-
-@Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css']
-})
+import {Component} from '@angular/core';
 
 export interface PeriodicElement {
   name: string;
@@ -26,11 +20,19 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
 ];
 
-export class DashboardComponent implements OnInit {
+@Component({
+  selector: 'app-dashboard',
+  templateUrl: './dashboard.component.html',
+  styleUrls: ['./dashboard.component.css']
+})
 
-  constructor() { }
+export class DashboardComponent {
 
-  ngOnInit() {
+  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  dataSource = ELEMENT_DATA;
+
+  onClickRow(row:any): void {
+    console.log(row);
   }
-
+  
 }

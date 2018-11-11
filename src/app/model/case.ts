@@ -1,5 +1,6 @@
-export class Customer {
-    name: string;
+export class Case {
+    caseId: string;
+    customerName: string;
     vehicleInfo: string;
     origin: string;
     destination: string;

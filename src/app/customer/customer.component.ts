@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Customer } from '../model/customer';
+import { Case } from '../model/case';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 
@@ -10,13 +10,13 @@ import { map } from 'rxjs/operators';
 })
 export class CustomerComponent implements OnInit {
 
-  customer: Customer;
+  case: Case;
   saveStatus: string;
   restItems: any;
   restItemsUrl = 'http://localhost:8181/customers';
 
   constructor(private http:HttpClient) { 
-    this.customer = new Customer();
+    this.case = new Case();
   }
 
   ngOnInit() {
